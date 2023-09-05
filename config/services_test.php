@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of rekalogika/domain-event package.
+ * This file is part of rekalogika/psr-16-simple-cache-bundle package.
  *
  * (c) Priyadi Iman Nurcahyo <https://rekalogika.dev>
  *
