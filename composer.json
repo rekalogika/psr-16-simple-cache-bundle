@@ -1,0 +1,45 @@
+{
+    "name": "rekalogika/psr-16-simple-cache-bundle",
+    "description": "Enables PSR-16 Simple Cache services in Symfony that were previously removed in Symfony 4.3. Just wire in Psr\\SimpleCache\\CacheInterface to use it.",
+    "keywords": [
+        "psr-16",
+        "simple-cache",
+        "symfony",
+        "symfony-bundle",
+        "CacheInterface"
+    ],
+    "type": "symfony-bundle",
+    "provide": {
+        "psr/simple-cache-implementation": "1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rekalogika\\Psr16SimpleCacheBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rekalogika\\Psr16SimpleCacheBundle\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Priyadi Iman Nurcahyo",
+            "email": "priyadi@rekalogika.com"
+        }
+    ],
+    "require": {
+        "psr/simple-cache": "^3.0",
+        "symfony/cache": "^6.0",
+        "symfony/dependency-injection": "^6.0",
+        "symfony/http-kernel": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "symfony/config": "^6.0",
+        "phpstan/phpstan": "^1.10",
+        "vimeo/psalm": "^5.15",
+        "psalm/plugin-phpunit": "^0.18.4",
+        "symfony/phpunit-bridge": "^6.3"
+    }
+}
