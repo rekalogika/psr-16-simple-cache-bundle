@@ -8,6 +8,7 @@
         "symfony-bundle",
         "CacheInterface"
     ],
+    "license": "MIT",
     "type": "symfony-bundle",
     "provide": {
         "psr/simple-cache-implementation": "1.0.0"
