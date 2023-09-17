@@ -18,6 +18,9 @@ use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
 
 class RekalogikaPsr16SimpleCacheExtension extends Extension
 {
+    /**
+     * @param array<array-key,mixed> $configs
+     */
     public function load(array $configs, ContainerBuilder $container)
     {
         $env = $container->getParameter('kernel.environment');
