@@ -21,6 +21,8 @@ jobs:
 
     runs-on: ${{ matrix.operating-system }}
 
+    name: Symfony ${{ matrix.symfony }}, ${{ matrix.dep }} deps, PHP ${{ matrix.php }}, ${{ matrix.operating-system }}
+
     steps:
     - uses: actions/checkout@v3
 
