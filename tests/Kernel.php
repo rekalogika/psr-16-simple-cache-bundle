@@ -25,7 +25,7 @@ class Kernel extends HttpKernelKernel
         ];
     }
 
-    public function registerContainerConfiguration(LoaderInterface $loader)
+    public function registerContainerConfiguration(LoaderInterface $loader): void
     {
     }
 }
