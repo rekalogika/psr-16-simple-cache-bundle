@@ -21,7 +21,7 @@ class RekalogikaPsr16SimpleCacheExtension extends Extension
     /**
      * @param array<array-key,mixed> $configs
      */
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container): void
     {
         $env = $container->getParameter('kernel.environment');
 
