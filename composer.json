@@ -1,6 +1,7 @@
 {
     "name": "rekalogika/psr-16-simple-cache-bundle",
     "description": "Enables PSR-16 Simple Cache services in Symfony that were previously removed in Symfony 4.3. Just wire in Psr\\SimpleCache\\CacheInterface to use it.",
+    "homepage": "https://rekalogika.dev/psr-16-simple-cache-bundle",
     "keywords": [
         "psr-16",
         "simple-cache",
