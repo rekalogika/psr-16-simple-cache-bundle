@@ -32,16 +32,16 @@
     ],
     "require": {
         "psr/simple-cache": "^3.0",
-        "symfony/cache": "^6.0",
-        "symfony/dependency-injection": "^6.0",
-        "symfony/http-kernel": "^6.0"
+        "symfony/cache": "^6.0 || ^7.0",
+        "symfony/dependency-injection": "^6.0 || ^7.0",
+        "symfony/http-kernel": "^6.0 || ^7.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.6",
-        "symfony/config": "^6.0",
+        "symfony/config": "^6.0 || ^7.0",
         "phpstan/phpstan": "^1.10",
         "vimeo/psalm": "^5.15",
         "psalm/plugin-phpunit": "^0.18.4",
-        "symfony/phpunit-bridge": "^6.0"
+        "symfony/phpunit-bridge": "^6.0 || ^7.0"
     }
 }
