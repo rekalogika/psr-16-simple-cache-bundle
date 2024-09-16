@@ -3,6 +3,7 @@
 ## 1.2.0
 
 * build: update phpunit
+* build: add dependabot config
 
 ## 1.1.0
 
