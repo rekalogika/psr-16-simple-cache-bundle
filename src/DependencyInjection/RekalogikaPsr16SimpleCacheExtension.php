@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of rekalogika/psr-16-simple-cache-bundle package.
  *
@@ -27,9 +29,9 @@ class RekalogikaPsr16SimpleCacheExtension extends Extension
 
         $loader = new PhpFileLoader(
             $container,
-            new FileLocator(__DIR__ . '/../../config')
+            new FileLocator(__DIR__ . '/../../config'),
         );
-        
+
         if ('test' === $env) {
             $loader->load('services_test.php');
         }

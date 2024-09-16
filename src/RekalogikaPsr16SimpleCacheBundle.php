@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of rekalogika/psr-16-simple-cache-bundle package.
  *

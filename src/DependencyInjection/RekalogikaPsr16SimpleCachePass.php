@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of rekalogika/psr-16-simple-cache-bundle package.
  *
@@ -34,7 +36,7 @@ class RekalogikaPsr16SimpleCachePass implements CompilerPassInterface
 
             $definition->addTag('cache.pool.simple');
 
-            $simpleId = $id.'.simple';
+            $simpleId = $id . '.simple';
             $container->setDefinition($simpleId, $definition);
 
             if ($simpleId == 'cache.app.simple') {
