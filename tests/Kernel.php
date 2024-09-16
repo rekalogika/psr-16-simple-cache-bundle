@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of rekalogika/psr-16-simple-cache-bundle package.
  *
@@ -17,7 +19,6 @@ use Symfony\Component\HttpKernel\Kernel as HttpKernelKernel;
 
 class Kernel extends HttpKernelKernel
 {
-
     public function registerBundles(): iterable
     {
         return [
@@ -25,7 +26,5 @@ class Kernel extends HttpKernelKernel
         ];
     }
 
-    public function registerContainerConfiguration(LoaderInterface $loader): void
-    {
-    }
+    public function registerContainerConfiguration(LoaderInterface $loader): void {}
 }

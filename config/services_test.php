@@ -1,5 +1,8 @@
 <?php
 
+
+declare(strict_types=1);
+
 /*
  * This file is part of rekalogika/psr-16-simple-cache-bundle package.
  *
@@ -8,8 +11,6 @@
  * For the full copyright and license information, please view the LICENSE file
  * that was distributed with this source code.
  */
-
-declare(strict_types=1);
 
 use Psr\SimpleCache\CacheInterface;
 use Rekalogika\Psr16SimpleCacheBundle\Tests\Kernel;
@@ -23,12 +24,18 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         return;
     }
 
-    $services->set(
-        'cache.app',
-        ArrayAdapter::class
-    )
+    $services
+        ->set(
+            'cache.app',
+            ArrayAdapter::class,
+        )
         ->tag('cache.pool');
 
-    $services->alias('test.cache.app.simple', 'cache.app.simple')->public();
-    $services->alias('test.' . CacheInterface::class, CacheInterface::class)->public();
+    $services
+        ->alias('test.cache.app.simple', 'cache.app.simple')
+        ->public();
+
+    $services
+        ->alias('test.' . CacheInterface::class, CacheInterface::class)
+        ->public();
 };
